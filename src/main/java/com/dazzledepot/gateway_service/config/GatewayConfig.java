@@ -15,6 +15,7 @@ public class GatewayConfig {
                 .route("categories", r -> r.path("/api/categories/**").uri("http://localhost:8083"))
                 .route("homepage", r -> r.path("/api/homepage/**").uri("http://localhost:8084"))
                 .route("cart", r -> r.path("/api/cart/**").uri("http://localhost:8085"))
+                .route("orders", r -> r.path("/api/orders/**").uri("http://localhost:8086"))
                 .build();
     }
 }
